@@ -1,0 +1,99 @@
+@font-face {
+    font-family: "font-1";
+    src: url(./font/Inter-VariableFont_slnt\wght.ttf);
+  }
+*{
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: "font-1", Arial;
+}
+body{
+    background: rgb(27,27,27);
+    color: rgb(246,246,246);
+    min-height: 100vh;
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 1.2rem;
+}
+.navBarLogo{
+    font-size: 1.2rem;
+}
+.navBarItems{
+    display: flex;
+    gap: 12rem;
+}
+.navBarItems__list{
+    list-style: none;
+}
+.section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.leftContainerSection{
+    width: 50%;
+}
+.textContainerSection--size{
+    font-size: 5rem;
+}
+.text2ContainerSection--size{
+    color: rgb(71, 77, 255);
+    font-size: 1.8rem;
+}
+.parapgraphContainerSection--size{
+    font-size: 0.8rem;
+}
+.rightContainerSection{
+    width: 50%;
+}
+.rightContainerSection--size{
+    width: 100%;
+}
+.footer{
+    background: black;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 20% 80%;
+    border-radius: 10px;
+}
+.ContainerTextfooter{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+.btnItemsFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 5px;
+}
+.btnFooter{
+    min-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    background: rgb(71, 77, 255);
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 10px;
+}
+.rightContainerfooter{
+    margin-left: 200px;
+}
+.ContainerTextfooter--marginright{
+    margin-right: 35rem;
+}
+.investorsItems{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 25px;
+    align-items: center;
+    margin-top: 15px;
+}
+.investorsImages--size{
+    width: 100px;
+}
