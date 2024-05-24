@@ -1,99 +1,169 @@
 @font-face {
-    font-family: "font-1";
-    src: url(./font/Inter-VariableFont_slnt\wght.ttf);
+  font-family: "font-1";
+  src: url(./font/Inter-VariableFont_slnt\wght.ttf);
+}
+* {
+  margin: 0;
+  padding: 5px;
+  box-sizing: border-box;
+  font-family: "font-1", Arial;
+}
+body {
+  background: rgb(27, 27, 27);
+  color: rgb(246, 246, 246);
+  min-height: 100vh;
+}
+.navBar {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 50px;
+  margin: 10px 20px;
+}
+.navBarLogo {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.navBarItems {
+  display: flex;
+  justify-content: space-between;
+}
+.navBarItems__list {
+  list-style: none;
+}
+a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+a:hover {
+  font-size: 1.3rem;
+  color: #2128bd;
+}
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.leftContainerSection {
+  width: 50%;
+}
+.textContainerSection--size {
+  font-size: 5rem;
+}
+.text2ContainerSection--size {
+  color: rgb(71, 77, 255);
+  font-size: 1.8rem;
+}
+.rightContainerSection {
+  width: 50%;
+}
+.rightContainerSection--size {
+  width: 100%;
+}
+.footer {
+  background: rgb(7, 7, 7);
+  display: grid;
+  grid-template-columns: 20% 80%;
+  border-radius: 10px;
+}
+.ContainerTextfooter {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+.btnItemsFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 5px;
+}
+.btnFooter {
+  min-height: 40px;
+  text-align: center;
+  font-size: 16px;
+  background: rgb(71, 77, 255);
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 10px;
+}
+.rightContainerfooter {
+  margin-left: 200px;
+}
+.ContainerTextfooter--marginright {
+  margin-right: 35rem;
+}
+.investorsItems {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 25px;
+  align-items: center;
+  margin-top: 15px;
+}
+.investorsImages--size {
+  width: 100px;
+}
+
+/* -----------------------------RESPONSIVE------------------------------------- */
+
+@media (max-width: 825px) {
+  .textContainerSection--size {
+    font-size: 2.7rem;
   }
-*{
-    margin: 0;
-    padding: 5px;
-    box-sizing: border-box;
-    font-family: "font-1", Arial;
-}
-body{
-    background: rgb(27,27,27);
-    color: rgb(246,246,246);
-    min-height: 100vh;
-}
-.navBar{
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-top: 1.2rem;
-}
-.navBarLogo{
-    font-size: 1.2rem;
-}
-.navBarItems{
-    display: flex;
-    gap: 12rem;
-}
-.navBarItems__list{
-    list-style: none;
-}
-.section{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.leftContainerSection{
-    width: 50%;
-}
-.textContainerSection--size{
-    font-size: 5rem;
-}
-.text2ContainerSection--size{
-    color: rgb(71, 77, 255);
-    font-size: 1.8rem;
-}
-.parapgraphContainerSection--size{
-    font-size: 0.8rem;
-}
-.rightContainerSection{
-    width: 50%;
-}
-.rightContainerSection--size{
-    width: 100%;
-}
-.footer{
-    background: black;
-    display: grid;
-    margin: 0 auto;
-    grid-template-columns: 20% 80%;
-    border-radius: 10px;
-}
-.ContainerTextfooter{
+  .text2ContainerSection--size {
     font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
+  }
+  .footer {
+    grid-template-columns: 25% 75%;
+  }
+  .investorsImages--size {
+    width: 75px;
+  }
+  .ContainerTextfooter {
+    font-size: 1rem;
+  }
+  .rightContainerfooter {
+    margin-left: 100px;
+  }
 }
-.btnItemsFooter{
-    display: flex;
+
+@media (max-width: 577px) {
+  .section {
     flex-direction: column;
-    justify-content: space-around;
-    gap: 5px;
-}
-.btnFooter{
-    min-height: 40px;
+  }
+  .textContainerSection--size {
+    font-size: 4.5rem;
     text-align: center;
-    font-size: 16px;
-    background: rgb(71, 77, 255);
-    color: white;
-    font-weight: bold;
-    letter-spacing: 1px;
-    border-radius: 10px;
-}
-.rightContainerfooter{
-    margin-left: 200px;
-}
-.ContainerTextfooter--marginright{
-    margin-right: 35rem;
-}
-.investorsItems{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 25px;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .text2ContainerSection--size {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .leftContainerSection, .rightContainerSection  {
+    width: 100%;
+  }
+  .rightContainerSection--size {
+    width:80%;
+    margin: 0 auto;
+    display: block;
+  }
+  .footer {
+    grid-template-columns: 1fr;
+  }
+  .ContainerTextfooter {
+    font-size: 1rem;
+    margin-right: 200px;
+  }
+  .btnItemsFooter {
+    width: 200px;
+    margin: 0 auto;
+  }
+  .investorsItems {
+    width: 100%;
+    gap: 15px;
     align-items: center;
-    margin-top: 15px;
-}
-.investorsImages--size{
-    width: 100px;
+    margin: 0 auto;
+  }
 }
