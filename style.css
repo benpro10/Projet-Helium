@@ -104,6 +104,37 @@ a:hover {
   width: 100px;
 }
 
+.mouseoverCercle1{
+    width: 15px;
+    height: 15px;
+    background: rgba(255, 0, 0, 0.489);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.mouseoverCercle2{
+    width: 100px;
+    height: 100px;
+    background: rgba(0, 157, 255, 0.333);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.mouseoverCercle3{
+    width: 125px;
+    height: 125px;
+    background: rgba(255, 0, 0, 0.135);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* -----------------------------RESPONSIVE------------------------------------- */
 
 @media (max-width: 825px) {
