@@ -104,7 +104,7 @@ a:hover {
   width: 100px;
 }
 
-.mouseoverCercle1{
+.mouseoverCerclet1{
     width: 15px;
     height: 15px;
     background: rgba(255, 0, 0, 0.489);
@@ -114,7 +114,7 @@ a:hover {
     top: 50%;
     transform: translate(-50%, -50%);
 }
-.mouseoverCercle2{
+.mouseoverCerclet2{
     width: 100px;
     height: 100px;
     background: rgba(0, 157, 255, 0.333);
@@ -124,7 +124,7 @@ a:hover {
     top: 50%;
     transform: translate(-50%, -50%);
 }
-.mouseoverCercle3{
+.mouseoverCerclet3{
     width: 125px;
     height: 125px;
     background: rgba(255, 0, 0, 0.135);
