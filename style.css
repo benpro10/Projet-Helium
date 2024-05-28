@@ -29,6 +29,7 @@ body {
 }
 .navBarItems__list {
   list-style: none;
+  width: 10%;
 }
 a {
   color: white;
@@ -104,35 +105,35 @@ a:hover {
   width: 100px;
 }
 
-.mouseoverCerclet1{
-    width: 15px;
-    height: 15px;
-    background: rgba(255, 0, 0, 0.489);
-    border-radius: 50%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+.mouseoverCerclet1 {
+  width: 15px;
+  height: 15px;
+  background: rgba(255, 0, 0, 0.489);
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
-.mouseoverCerclet2{
-    width: 100px;
-    height: 100px;
-    background: rgba(0, 157, 255, 0.333);
-    border-radius: 50%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+.mouseoverCerclet2 {
+  width: 100px;
+  height: 100px;
+  background: rgba(0, 157, 255, 0.333);
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
-.mouseoverCerclet3{
-    width: 125px;
-    height: 125px;
-    background: rgba(255, 0, 0, 0.135);
-    border-radius: 50%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+.mouseoverCerclet3 {
+  width: 125px;
+  height: 125px;
+  background: rgba(255, 0, 0, 0.135);
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* -----------------------------RESPONSIVE------------------------------------- */
@@ -172,11 +173,12 @@ a:hover {
     font-size: 1.5rem;
     text-align: center;
   }
-  .leftContainerSection, .rightContainerSection  {
+  .leftContainerSection,
+  .rightContainerSection {
     width: 100%;
   }
   .rightContainerSection--size {
-    width:80%;
+    width: 80%;
     margin: 0 auto;
     display: block;
   }
